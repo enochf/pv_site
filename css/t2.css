@@ -1,0 +1,49 @@
+/*-------------- HEADER --------------*/
+#header {
+height:112px;
+background:url(../images/header_pvjedi_t2.jpg) no-repeat;
+}
+#topnav {
+top:25px;
+right:15px;
+}
+
+/*-------------- MAINNAV --------------*/
+#tab1 { width:78px; background:url(../images/sprite.png) no-repeat 0px -74px; }
+#tab1:hover { background-position:0px -37px; }
+#tab2 { width:125px; background:url(../images/sprite.png) no-repeat -78px -74px; }
+#tab2:hover { background-position:-78px -37px; }
+#tab3 { width:119px; background:url(../images/sprite.png) no-repeat -203px -74px; }
+#tab3:hover { background-position:-203px -37px; }
+#tab4 { width:211px; background:url(../images/sprite.png) no-repeat -322px -74px; }
+#tab4:hover { background-position:-322px -37px; }
+#tab5 { width:64px; background:url(../images/sprite.png) no-repeat -533px -74px; }
+#tab5:hover { background-position:-533px -37px; }
+
+
+/*-------------- Solar Tools Navigator --------------*/
+#stn_container {
+position:absolute;
+top:120px;
+right:16px;
+}
+
+/*-------------- DOWNLOAD --------------*/
+#dl {
+float:right;
+padding:15px 10px 15px 10px;
+margin:10px;
+margin-bottom:0px;
+background-color:#fff;
+-webkit-border-radius:8px;
+-moz-border-radius:8px;
+border-radius:8px;
+behavior: url(css/PIE.php);
+}
+
+/*-------------- DOWNLOAD --------------*/
+#socialmedia {
+position:absolute;
+top:125px;
+right:175px;
+}

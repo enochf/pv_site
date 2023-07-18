@@ -1,0 +1,19 @@
+#reg label {
+display:block;
+text-align:right;
+width:150px;
+float:left;
+color:#01355e;
+padding:7px;
+margin-bottom:10px;
+margin-right:10px;
+background-color:#eee;
+}
+#reg input.txt {
+width:200px;
+padding:5px;
+border:1px solid #00a4e4;
+}
+#reg input.btn {
+padding:3px 10px;
+}

@@ -1,0 +1,376 @@
+html {
+	background-color:#fff;
+}
+body {
+	font-family:tahoma,arial,sans-serif;
+	font-size:14px;
+	line-height:16px;
+	margin:0px;
+}
+
+.fl { position:relative; float:left; }
+.fr { position:relative; float:right; }
+.fl5 { position:relative; float:left; margin-right:5px; }
+.fr5 { position:relative; float:right; margin-left:5px; }
+.fl10 { position:relative; float:left; margin-right:10px; }
+.fr10 { position:relative; float:right; margin-left:10px; }
+.fl15 { position:relative; float:left; margin-right:15px; }
+.fr15 { position:relative; float:right; margin-left:15px; }
+.fl20 { position:relative; float:left; margin-right:20px; }
+.fr20 { position:relative; float:right; margin-left:20px; }
+.clr { clear:both; }
+.hidden { display:none; }
+#results td.highlight, #pcd td.highlight { background-color:#eee; }
+#results td.ind1, #pcd td.ind1 { padding-left:30px; }
+#results td.ind2, #pcd td.ind2 { padding-left:60px; }
+#results tr.bld, #pcd tr.bld { font-weight:bold; }
+#results td.note, #pcd td.note { font-size:11px; color:#666; padding-top:10px; padding-bottom:10px; }
+
+/*-------------- TOOLTIPS --------------
+SL. Blue: C4E4F9
+L. Blue: 0090E3
+D. Blue: 03375F
+*/
+span.help {
+position:relative;
+font-size:12px;
+font-weight:normal;
+color:#038BBC;
+line-height:18px;
+}
+span.help:hover {
+cursor:pointer;
+}
+div.tip {
+display:none;
+position:absolute;
+font-size:12px;
+width:300px;
+padding: 10px;
+color: #03375F;
+background-color: #C4E4F9;
+-moz-box-shadow: 3px 5px 10px #666;
+-webkit-box-shadow: 3px 5px 10px #666;
+box-shadow: 3px 5px 10px #666;
+/*text-shadow: 0 0 3px #fff;*/
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border:2px solid #fff;
+behavior: url(css/PIE.php);
+z-index:100;
+}
+div.tipright {
+top:-20px;
+left:30px;
+}
+div.tipleft {
+top:-20px;
+right:30px;
+}
+
+/*-------------- UPDATING --------------*/
+#updtxt {
+display:none;
+position:fixed;
+text-align:center;
+color:#fff;
+font-size:14px;
+font-weight:bold;
+line-height:50px;
+width:100%;
+z-index:101;
+}
+#updbg {
+display:none;
+position:fixed;
+height:50px;
+width:100%;
+z-index:100;
+background:url(../images/updating_calcs.png) no-repeat center;
+}
+
+/*-------------- HEADER --------------*/
+#appheader {
+width:1000px;
+height:64px;
+margin:0px auto;
+}
+#header {
+position:relative;
+width:1000px;
+margin:0px auto;
+z-index:100;
+}
+#topnav {
+position:absolute;
+top:40px;
+right:20px;
+}
+#topnav div {
+position:relative;
+display:block;
+float:left;
+font-size:12px;
+color:#fff;
+text-decoration:none;
+padding:7px 20px;
+}
+#topnav a {
+position:relative;
+display:block;
+float:left;
+font-size:12px;
+color:#01355e;
+font-weight:bold;
+text-decoration:none;
+padding:5px 20px;
+border-left:1px solid #7cc5ef;
+}
+#topnav a:hover {
+background-color:#4bafea;
+}
+#topnav a span {
+color:#fff;
+font-size:16px;
+}
+
+/*-------------- Mainnav --------------*/
+#navcontainer {
+width:1000px;
+margin:0px auto;
+}
+#mainnav {
+height:37px;
+padding-left:27px;
+border-left:1px solid #b5b5b5;
+border-right:1px solid #b5b5b5;
+}
+#mainnav li {
+float:left;
+}
+#mainnav li a {
+position:relative;
+display:block;
+height:37px;
+line-height:37px;
+}
+#mainnav #version {
+float:right;
+color:#999;
+font-size:12px;
+padding:15px 30px 0px 0px;
+}
+
+/*-------------- Mainbody --------------*/
+#mainbody {
+width:998px;
+padding-bottom:25px;
+margin:0px auto;
+border:1px solid #b5b5b5;
+border-top:none;
+-webkit-border-radius:0px 0px 8px 8px;
+-moz-border-radius:0px 0px 8px 8px;
+border-radius:0px 0px 8px 8px;
+behavior: url(css/PIE.php);
+}
+#mainbody h1 {
+position:relative;
+margin-bottom:10px;
+width:500px;
+}
+
+/*-------------- Leftside --------------*/
+#leftside {
+position:relative;
+float:left;
+width:670px;
+padding-right:15px;
+margin-top:20px;
+margin-left:25px;
+border-right:1px solid #b5b5b5;
+}
+#leftside h2 {
+color:#01355e;
+font-size:16px;
+font-weight:normal;
+line-height:20px;
+padding-bottom:10px;
+margin-bottom:15px;
+border-bottom:2px solid #96CEFF;
+}
+#leftside p {
+line-height:18px;
+margin-bottom:15px;
+}
+#leftside p a {
+color:#00a4e4;
+font-size:12px;
+text-decoration:none;
+}
+#leftside p a:hover {
+color:#01355e;
+text-decoration:underline;
+}
+#leftside ul {
+list-style:disc;
+margin-left:30px;
+margin-bottom:15px;
+}
+#leftside ul li {
+margin-bottom:5px;
+}
+#leftside p.answer, #leftside ul.answer {
+margin:30px;
+margin-top:15px;
+}
+
+/*-------------- Rightside --------------*/
+#rightside {
+position:relative;
+float:right;
+width:230px;
+padding:10px;
+margin-top:20px;
+margin-right:20px;
+background-color:#eee;
+}
+#rightside h2 {
+color:#01355e;
+font-size:16px;
+font-weight:normal;
+line-height:20px;
+margin-bottom:15px;
+}
+#rightside p {
+color:#666;
+font-size:12px;
+margin-bottom:15px;
+}
+#leftside p.lset {
+margin-bottom:30px;
+}
+#leftside p.lset a, #rightside p.lset a {
+display:block;
+color:#00a4e4;
+font-size:12px;
+text-decoration:none;
+padding:4px 10px;
+}
+#leftside p.lset a:hover, #rightside p.lset a:hover {
+color:#01355e;
+background-color:#ddd;
+}
+
+/*-------------- Fullside --------------*/
+#fullside {
+padding-top:20px;
+margin:0px 25px;
+}
+#fullside p a {
+color:#00a4e4;
+text-decoration:none;
+}
+#fullside p a:hover {
+color:#01355e;
+}
+
+/*-------------- Dropdown --------------*/
+.dropdown {
+display:none;
+padding:15px;
+margin-bottom:15px;
+background-color:#eee;
+-webkit-border-radius:8px;
+-moz-border-radius:8px;
+border-radius:8px;
+behavior: url(css/PIE.php);
+}
+.dropdown h2 {
+color:#01355e;
+font-size:16px;
+font-weight:normal;
+line-height:20px;
+margin-bottom:15px;
+}
+.dropdown label {
+display:block;
+text-align:right;
+width:160px;
+float:left;
+color:#01355e;
+padding:7px;
+margin-bottom:10px;
+margin-right:10px;
+background-color:#ddd;
+}
+.dropdown input.txt {
+width:200px;
+padding:5px;
+border:1px solid #00a4e4;
+}
+.dropdown input.btn {
+padding:3px 10px;
+}
+
+/*-------------- Footer --------------*/
+#footer {
+text-align:center;
+width:1000px;
+margin:0px auto;
+padding:15px 0px;
+}
+#footer img {
+margin-bottom:20px;
+}
+#footer p {
+font-size:12px;
+margin-bottom:20px;
+}
+#footer p a {
+color: #27638c;
+text-decoration:none;
+}
+#footer p a:hover {
+color:#cc6600;
+text-decoration:underline;
+}
+
+/*-------------- Message --------------*/
+#message, #message10, #message12, #message15 {
+text-align:center;
+color:#fff;
+padding:8px;
+margin-bottom:15px;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+behavior: url(css/PIE.php);
+background-color:#00a4e4;
+}
+
+/*-------------- Solar Tools Navigator --------------*/
+#stn_container {
+position:absolute;
+top:303px;
+right:16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

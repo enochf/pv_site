@@ -1,0 +1,76 @@
+/*-------------- RESULTS --------------*/
+a.return {
+display:block;
+width:172px;
+height:43px;
+background:url(../images/sprite.png) no-repeat 0px -203px;
+}
+a.return:hover {
+background-position:-174px -203px;
+}
+#results {
+padding:15px;
+-webkit-border-radius:8px;
+-moz-border-radius:8px;
+border-radius:8px;
+background-color:#e2e2e2;
+behavior: url(css/PIE.php);
+}
+#results table {
+width:920px;
+margin-bottom:20px;
+}
+#results tr {
+border-bottom:1px solid #71b9e3;
+}
+#results th {
+background-color:#d5d5d5;
+}
+#results th, #results td {
+text-align:left;
+font-size:12px;
+padding:5px 10px;
+}
+#results h2 {
+color:#01355e;
+font-size:16px;
+font-weight:normal;
+line-height:20px;
+padding-bottom:15px;
+border-bottom:3px solid #01355e;
+}
+#results input, #results select {
+font-size:12px;
+width:80px;
+margin-top:3px;
+border:1px solid #0090e4;
+}
+#results p {
+font-size:12px;
+color:#333;
+margin-bottom:15px;
+}
+
+#current {
+color:#01355e;
+font-size:14px;
+padding:10px 10px;
+margin-bottom:10px;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+behavior: url(css/PIE.php);
+background-color:#f1f1f1;
+border:none;
+}
+#current #unsaved {
+font-style:italic;
+color:#999;
+}
+#current a {
+color:#00a4e4;
+text-decoration:none;
+}
+#current a:hover {
+color:#01355e;
+}

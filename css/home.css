@@ -1,0 +1,37 @@
+/*-------------- HEADER --------------*/
+#header {
+height:296px;
+background:url(../images/header_pvjedi_home.jpg) no-repeat;
+}
+#topnav div {
+display:none;
+}
+#run {
+display:block;
+position:absolute;
+top:220px;
+left:410px;
+width:163px;
+height:45px;
+background:url(../images/sprite.png) no-repeat 0px -157px;
+}
+#run:hover {
+background-position:-163px -157px;
+}
+#socialmedia {
+position:absolute;
+top:260px;
+right:25px;
+}
+
+/*-------------- MAINNAV --------------*/
+#tab1 { width:78px; background:url(../images/sprite.png) no-repeat 0px -74px; }
+#tab1:hover { background-position:0px 0px; }
+#tab2 { width:125px; background:url(../images/sprite.png) no-repeat -78px -74px; }
+#tab2:hover { background-position:-78px 0px; }
+#tab3 { width:119px; background:url(../images/sprite.png) no-repeat -203px -74px; }
+#tab3:hover { background-position:-203px 0px; }
+#tab4 { width:211px; background:url(../images/sprite.png) no-repeat -322px -74px; }
+#tab4:hover { background-position:-322px 0px; }
+#tab5 { width:64px; background:url(../images/sprite.png) no-repeat -533px -74px; }
+#tab5:hover { background-position:-533px 0px; }

@@ -1,0 +1,43 @@
+#modelruns {
+width:100%;
+}
+#modelruns th {
+padding:8px;
+color:#01355e;
+}
+#modelruns td {
+padding:8px;
+background-color:#eee;
+border-top:3px solid #fff;
+}
+#modelruns td a {
+color:#00a4e4;
+font-size:12px;
+text-decoration:none;
+}
+#modelruns td a:hover {
+color:#01355e;
+text-decoration:underline;
+}
+#modelruns td.c1 {
+width:400px;
+}
+#modelruns td.c2 {
+text-align:center;
+background-color:#e4e4e4;
+}
+#modelruns td.c3 {
+text-align:center;
+}
+#chgPass {
+margin-bottom:20px;
+}
+#chgPass label {
+display:block;
+padding-bottom:5px;
+}
+#chgPass input[type=password] {
+width:200px;
+padding:5px;
+border:1px solid #00a4e4;
+}
